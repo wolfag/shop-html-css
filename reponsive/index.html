@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- My Lib -->
+    <link rel="stylesheet" href="./grid.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      .container {
+        text-align: center;
+        background-color: pink;
+      }
+      .course-item {
+        background-color: orange;
+        height: 260px;
+      }
+      h1 {
+        color: red;
+        line-height: 260px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid wide container">
+      <div class="row no-gutters">
+        <div class="col l-3 m-0 c-0">
+          <div class="category">
+            <ul>
+              <li>Js</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col l-9 m-12 c-12">
+          <div class="row">
+            <div class="col l-4 m-6 c-12">
+              <div class="course-item">
+                <h1>Course1</h1>
+              </div>
+            </div>
+            <div class="col l-4 m-6 c-12">
+              <div class="course-item">
+                <h1>Course2</h1>
+              </div>
+            </div>
+            <div class="col l-4 m-6 c-12">
+              <div class="course-item">
+                <h1>Course3</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l-6 l-o-3 m-8 m-o-2 c-12">
+          <div class="course-item">
+            <h1>center</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
